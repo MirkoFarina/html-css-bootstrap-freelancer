@@ -1,11 +1,13 @@
+/* GENERAL */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+/* /GENERAL */
 
-
-[class^="container"] {
+/* DEBUG */
+/* [class^="container"] {
   background-color: rgba(200, 0, 0, .4);
 } 
 
@@ -14,14 +16,16 @@
 }
 [class^="col"] {
   background-color: rgba(18, 18, 176, 0.399);
-}
+} */
 
-
+/* UTILITY */
 .mf-container {
   width: 60%;
   margin: 0 auto;
 }
+/* /UTILITY */
 
+/* HEADER */
 header {
   height: 100px;
   background-color: #2c3e50;
@@ -29,27 +33,68 @@ header {
   align-items: center;
 }
 
-.jumbotron {
-  height: 500px;
+header .mf-logo, 
+header .mf-hamburgher,
+header .mf-menu-completo {
+  width: 100%;
+  height: 50px;
+  background-color: red;
+}
+
+/* /HEADER */
+
+/* MAIN */
+section {
+  margin-bottom: 50px;
+}
+.mf-star {
+  margin-bottom: 20px;
+}
+
+.mf-jumbotron {
+  height: 490px;
   background-color: #1abc9c;
   align-items: center;
   justify-content: center;
   margin-bottom: 50px;
 }
 
-section {
-  margin-bottom: 50px;
+.mf-img-jumbo {
+  width: 100%;
+  height: 200px;
+  background-color: blueviolet;
 }
 
-#about {
+#mf-portfolio .mf-card {
+  width: 100%;
+  height: 300px;
+  background-color: yellow;
+  border-radius: 15px;
+}
+
+#mf-about {
   background-color: #1ABC9C;
 }
 
-footer .top {
+#mf-contact-me .area-form {
+  width: 100%;
+  height: 300px;
+  background-color: pink;
+}
+
+/* /MAIN */
+
+/* FOOTER */
+footer .mf-top {
   background-color: #3A546D;
 }
 
-footer .bottom {
+footer .mf-top  h4 {
+  text-align: center;
+}
+
+footer .mf-bottom {
   background-color: #2C3E50;
   padding: 50px 0;
 }
+/* /FOOTER */
