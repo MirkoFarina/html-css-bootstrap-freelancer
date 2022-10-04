@@ -1,4 +1,13 @@
 /* GENERAL */
+:root {
+  --mf-color-white: white;
+  --mf-bgcolor-lightblue: #1ABC9C; 
+}
+
+img {
+  max-width: 100%;
+}
+
 
 /* /GENERAL */
 
@@ -7,13 +16,32 @@
   width: 70%;
   margin: 0 auto;
 }
+
+.mf-star::before {
+  content: '';
+  display: inline-block;
+  height: 4px;
+  width: 25%;
+  border-radius: 10px;
+  background-color: var(--mf-color-white);
+}
+.mf-star::after {
+  content: '';
+  display: inline-block;
+  height: 4px;
+  width: 30%;
+  border-radius: 10px;
+  background-color: var(--mf-color-white);
+}
+
+.bi-star-fill {
+  font-size: 1.8rem;
+}
 /* /UTILITY */
 
 /* HEADER */
 header {
-  height: 100px;
   background-color: #2c3e50;
-  align-items: center;
   font-weight: 700;
 }
 
@@ -32,33 +60,42 @@ header {
 section {
   margin-bottom: 50px;
 }
-.mf-star {
-  margin-bottom: 20px;
-}
+
 
 .mf-jumbotron {
   height: 490px;
-  background-color: #1abc9c;
+  background-color: var(--mf-bgcolor-lightblue);
   align-items: center;
   justify-content: center;
   margin-bottom: 50px;
+  color: var(--mf-color-white);
 }
 
-.mf-img-jumbo {
-  width: 100%;
-  height: 200px;
-  background-color: blueviolet;
+.mf-content-jumbo img{
+  width: 250px;
+  margin-bottom: 15px;
 }
 
-#mf-portfolio .mf-card {
-  width: 100%;
-  height: 300px;
-  background-color: yellow;
-  border-radius: 15px;
+.mf-content-jumbo h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.mf-content-jumbo  .mf-description {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+#mf-portfolio {
+  color: black;
+}
+
+#mf-portfolio .mf-card  img{
+  border-radius: 6px;
 }
 
 #mf-about {
-  background-color: #1ABC9C;
+  background-color: var(--mf-bgcolor-lightblue);
 }
 
 #mf-about .mf-button {
@@ -95,9 +132,12 @@ footer .mf-bottom {
 
 /* MEDIA  */
 @media screen and ( min-width:768px ) {
+/* HEADER */
   .navbar-brand.mf-navbar-brand {
     font-size: 1.7rem;
   }
+/* /HEADER */
+
 }
 
 /* /MEDIA  */
