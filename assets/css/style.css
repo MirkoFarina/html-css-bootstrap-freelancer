@@ -13,7 +13,7 @@ img {
 
 /* UTILITY */
 .mf-container {
-  width: 70%;
+  width: 60%;
   margin: 0 auto;
 }
 
@@ -96,30 +96,68 @@ section {
 
 #mf-about {
   background-color: var(--mf-bgcolor-lightblue);
+  color: var(--mf-color-white);
 }
 
-#mf-about .mf-button {
-  width: 100%;
-  height: 50px;
-  background-color: green;
-  margin-bottom: 30px;
+#mf-about .row p {
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 25px;
 }
 
-#mf-contact-me .area-form {
-  width: 100%;
-  height: 300px;
-  background-color: pink;
+#mf-contact-me .form-control.mf-form-style {
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ border-radius: 0;
+ padding: 0;
+ padding-bottom: 20px;
+}
+
+#mf-contact-me .form-control.mf-form-style::placeholder {
+  color: #2c3e50;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.btn-custom {
+  background-color: var(--mf-bgcolor-lightblue);
+  border-color: var(--mf-bgcolor-lightblue);
 }
 
 /* /MAIN */
 
 /* FOOTER */
+footer  {
+  color: var(--mf-color-white);
+}
 footer .mf-top {
   background-color: #3A546D;
+  padding: 40px 0px;
+  font-weight: 600;
 }
 
-footer .mf-top  h4 {
-  text-align: center;
+footer .mf-top ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer .mf-top .mf-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid white;
+  line-height: 50px;
+}
+
+footer .mf-top .mf-circle i{
+  color: white;
+  font-size: 1.2rem;
+}
+
+footer .mf-top  .mf-link {
+  color: var(--mf-bgcolor-lightblue);
+  text-decoration: none;
 }
 
 footer .mf-bottom {
