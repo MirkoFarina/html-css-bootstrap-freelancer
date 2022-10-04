@@ -186,12 +186,16 @@ footer .mf-bottom {
    width: 200px;
   }
 /* HEADER */
+
   .navbar-brand.mf-navbar-brand {
     font-size: 1.7rem;
   }
 /* /HEADER */
 
 /* MAIN */
+.mf-jumbotron {
+  height: 590px;
+}
 .mf-content-jumbo h1,
  section h2 {
   font-size: 4rem;
