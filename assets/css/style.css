@@ -51,7 +51,7 @@ header {
 section {
   margin-bottom: 50px;
 }
-
+/* jumbo */
 .mf-jumbotron {
   height: 490px;
   background-color: var(--mf-bgcolor-lightblue);
@@ -79,7 +79,10 @@ section {
   font-size: 1.2rem;
   font-weight: 600;
 }
+/* /jumbo */
 
+
+/* Portfolio */
 #mf-portfolio {
   color: #2c3e50;
 }
@@ -92,10 +95,42 @@ section {
   color: black;
 }
 
+.mf-card {
+  position: relative;
+}
+
 #mf-portfolio .mf-card  img{
   border-radius: 6px;
 }
 
+.mf-card:hover {
+  cursor: pointer;
+}
+
+.mf-card:hover .mf-hover {
+ background-color: rgba(11, 73, 11, 0.6);
+}
+
+.mf-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.fa-plus {
+  display: none;
+  font-size: 5rem;
+  color: var(--mf-color-white);
+}
+
+.mf-card:hover   .fa-plus{
+  display: inline-block;
+}
+/* /Portfolio */
+
+/* about */
 #mf-about {
   background-color: var(--mf-bgcolor-lightblue);
   color: var(--mf-color-white);
@@ -111,7 +146,9 @@ section {
   font-weight: 600;
   line-height: 25px;
 }
+/* /about */
 
+/* contact me */
 #mf-contact-me .mf-star .mf-line {
   background-color: var(--mf-color-black);
 }
@@ -135,6 +172,7 @@ section {
   background-color: var(--mf-bgcolor-lightblue);
   border-color: var(--mf-bgcolor-lightblue);
 }
+/* /contact me */
 
 /* /MAIN */
 
